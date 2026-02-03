@@ -67,27 +67,31 @@
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.1); /* Đổ bóng giống khung video */
 }
-        .section-title {
-            color: var(--accent-color);
-            border-bottom: 3px solid var(--primary-color);
-            padding-bottom: 15px;
-            margin-bottom: 30px;
-            font-size: 2.2rem;
-            text-align: center;
-            position: relative;
-        }
+/* Kiểu dáng khung trắng cho các phần nội dung */
+.info-card {
+    background: #fff;             /* Nền trắng */
+    max-width: 900px;            /* Độ rộng tối đa của khung */
+    margin: 30px auto;           /* Căn giữa khung ra giữa màn hình */
+    padding: 40px;               /* Khoảng cách từ chữ đến mép khung */
+    border-radius: 15px;         /* Bo góc khung */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng chuẩn */
+    line-height: 1.6;            /* Giúp văn bản dễ đọc hơn */
+}
 
-        .section-title::after {
-            content: '';
-            position: absolute;
-            left: 50%;
-            bottom: -3px;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 3px;
-            background-color: var(--accent-color);
-        }
+/* Định dạng tiêu đề bên trong khung */
+.section-title {
+    color: #d9534f;              /* Màu đỏ chủ đạo */
+    text-align: center;
+    margin-bottom: 10px;
+}
 
+/* Đường kẻ đỏ dưới tiêu đề giống mẫu */
+.divider {
+    width: 50px;
+    height: 3px;
+    background-color: #d9534f;
+    margin: 0 auto 20px auto;
+}
         .quote {
             font-style: italic;
             border-left: 6px solid var(--accent-color);
@@ -261,8 +265,9 @@ video {
         </div>
     </section>
 
-    <section class="content">
+    <section class="info-card">
         <h2 class="section-title">Nội dung tóm tắt</h2>
+        <div class="divider"></div>
         <p>Bộ phim xoay quanh câu chuyện tình kéo dài 15 năm của <strong>Châu Tiêu Tề</strong> (Hứa Quang Hán) và <strong>Lưu Vịnh Từ</strong> (Chương Nhược Nam). Từ một nam sinh nghịch ngợm yêu từ cái nhìn đầu tiên với cô bạn mới chuyển trường, Châu Tiêu Tề đã dành cả tuổi thanh xuân để theo đuổi và bảo vệ người con gái mình yêu.</p>
         
         <p>Họ đã cùng nhau trải qua những ngày tháng ngọt ngào của thời học sinh, những thử thách của tuổi trưởng thành và cả những hiểu lầm, hối tiếc. Phim không chỉ là một câu chuyện tình yêu, mà còn là bài học về sự trưởng thành và cách chúng ta học cách buông tay để đối phương hạnh phúc, để rồi cuối cùng, "hôn lễ của em" lại là một kỷ niệm buồn của anh.</p></section>
@@ -272,8 +277,9 @@ video {
 
         <p>Hôn lễ của em thu về 424 triệu NDT (65.6 triệu đô la mỹ) trong 3 ngày đầu tuần công chiếu tại Trung Quốc.Vào ngày 3 tháng 5, doanh thu phòng vé đã vượt quá 500 triệu NDT; vào ngày 4 tháng 5, doanh thu phòng vé đã vượt quá 600 triệu NDT. Vào ngày 8 tháng 5, doanh thu phòng vé đã vượt quá 700 triệu NDT; doanh thu phòng vé cuối cùng là 823 triệu NDT. .</p></section>
         
-    <section class="content">
-        <h2>Đánh giá chuyên môn</h2>
+    <section class="info-card">
+        <h2 class"section-title">Đánh giá chuyên môn</h2>
+        <div class="divider"></div>
 <p>Trang web tổng hợp bài phê bình Maoyan, hơn 650,000 đã đánh giá bộ phim với điểm trung bình là <strong>8.0/10.</strong></p>
 
 <p>Lim Yian Lu của Yahoo Life, viết: "Là một bộ phim tình cảm lãng mạn, phim đã đưa khán giả đi tới từng cung bậc cảm xúc về câu chuyện tình của nhân vật trong phim. Mặc dù 115 phút có thể hơi dài, nhưng bộ phim đã khai thác sâu vào các tình tiết, mang lại chiều sâu không chỉ cho các nhân vật, mà còn phát triển mối quan hệ của họ</p>
@@ -317,6 +323,7 @@ video {
 </a>
 </body>
 </html>
+
 
 
 
