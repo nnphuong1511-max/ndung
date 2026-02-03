@@ -59,7 +59,14 @@
             position: relative;
             z-index: 10;
         }
-
+.content-section {
+    background: white;
+    max-width: 800px;      /* Cùng độ rộng với video */
+    margin: 20px auto;     /* Căn giữa */
+    padding: 30px;         /* Tạo khoảng cách bên trong khung */
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1); /* Đổ bóng giống khung video */
+}
         .section-title {
             color: var(--accent-color);
             border-bottom: 3px solid var(--primary-color);
@@ -136,6 +143,7 @@
     width: 100%;
     height: 100%;
     border: none;
+    object-fit: cover; 
 }
 
 video {
@@ -292,6 +300,11 @@ video {
         <source src="tiktok.mp4" type="video/mp4">
     </video>
 </div>
+            <div class="video-container" style="display: flex; justify-content: center;">
+    <video width="560" height="315" controls preload="metadata">
+        <source src="q.mp4" type="video/mp4">
+    </video>
+</div>
     </section>
 </div>
 </a>
@@ -304,6 +317,7 @@ video {
 </a>
 </body>
 </html>
+
 
 
 
