@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hôn Lễ Của Em | My Love - Trailer & Hình ảnh</title>
+    <style>
+        :root {
+            --primary-color: #f7d7da; /* Hồng nhạt */
+            --accent-color: #d14150; /* Đỏ rượu */
+            --text-dark: #333;
+            --bg-light: #fdfafb;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            overflow-x: hidden; /* Tránh scroll ngang không mong muốn */
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('Đ.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 500px; /* Tăng chiều cao header */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 4.5rem; /* Kích thước chữ lớn hơn */
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        .container {
+            max-width: 960px; /* Độ rộng container lớn hơn */
+            margin: -80px auto 50px; /* Nâng container lên cao hơn */
+            background: white;
+            padding: 40px 50px; /* Tăng padding */
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            position: relative;
+            z-index: 10;
+        }
+
+        .section-title {
+            color: var(--accent-color);
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            font-size: 2.2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -3px;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+
+        .quote {
+            font-style: italic;
+            border-left: 6px solid var(--accent-color);
+            padding-left: 25px;
+            margin: 40px 0;
+            color: #555;
+            font-size: 1.2rem;
+            background-color: #fffafb;
+            padding: 20px 25px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            font-size: 1.1rem;
+        }
+
+        .info-table td {
+            padding: 12px 15px;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .info-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .info-table td:first-child {
+            font-weight: bold;
+            color: var(--accent-color);
+            width: 30%;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Tỷ lệ 16:9 cho video */
+            height: 0;
+            margin: 30px 0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: 200px; /* Chiều cao cố định cho ảnh */
+            object-fit: cover; /* Đảm bảo ảnh không bị méo */
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        ul li {
+            background: var(--primary-color);
+            margin-bottom: 10px;
+            padding: 12px 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            transition: background-color 0.2s ease;
+        }
+
+        ul li:hover {
+            background-color: #fcebeb;
+        }
+
+        ul li::before {
+            content: '⭐';
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.95rem;
+            color: #888;
+            background-color: #f0f0f0;
+            margin-top: 50px;
+        }
+  .home-btn-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--pink-main);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(240, 98, 146, 0.4);
+            font-size: 1.5rem;
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Hôn Lễ Của Em</h1>
+    <p>"Ngày em đẹp nhất,là ngày anh mất em"</p>
+</header>
+
+<div class="container">
+    <section class="info">
+        <h2 class="section-title">Thông tin phim</h2>
+        <table class="info-table">
+            <tr><td>Tên gốc</td><td>My Love (你的婚礼)</td></tr>
+            <tr><td>Diễn viên chính</td><td>Hứa Quang Hán, Chương Nhược Nam</td></tr>
+            <tr><td>Đạo diễn</td><td>Hàn Thiên</td></tr>
+            <tr><td>Thể loại</td><td>Lãng mạn, Thanh xuân, Chính kịch</td></tr>
+            <tr><td>Quốc gia</td><td>Trung Quốc</td></tr>
+            <tr><td>Thời lượng</td><td>115 phút</td></tr>
+            <tr><td>Ngày phát hành</td><td>30 tháng 4, 2021</td></tr>
+        </table>
+    </section>
+
+    <div class="quote">
+        "Vừa vặn gặp được cậu, là điều may mắn nhất trong cuộc đời tớ."
+    </div>
+
+    <section class="trailer">
+        <h2 class="section-title">Trailer Phim</h2>
+        <div class="video-container">
+       <iframe width="560" height="315" src="phim.mp4"  frameborder="0" ontrols preload="metadata">
+  <source src="phim.mp4" type="video/mp4"> allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="content">
+        <h2 class="section-title">Nội dung tóm tắt</h2>
+        <p>Bộ phim xoay quanh câu chuyện tình kéo dài 15 năm của <strong>Châu Tiêu Tề</strong> (Hứa Quang Hán) và <strong>Lưu Vịnh Từ</strong> (Chương Nhược Nam). Từ một nam sinh nghịch ngợm yêu từ cái nhìn đầu tiên với cô bạn mới chuyển trường, Châu Tiêu Tề đã dành cả tuổi thanh xuân để theo đuổi và bảo vệ người con gái mình yêu.</p>
+        
+        <p>Họ đã cùng nhau trải qua những ngày tháng ngọt ngào của thời học sinh, những thử thách của tuổi trưởng thành và cả những hiểu lầm, hối tiếc. Phim không chỉ là một câu chuyện tình yêu, mà còn là bài học về sự trưởng thành và cách chúng ta học cách buông tay để đối phương hạnh phúc, để rồi cuối cùng, "hôn lễ của em" lại là một kỷ niệm buồn của anh.</p></section>
+    <section class="content">
+        <h2 class="section-title">Doanh thu</h2>
+        <p>Tính đến trước ngày công chiếu, tổng doanh thu phòng vé đặt trước của bộ phim là <strong>50 triệu NDT.</strong> Phòng vé ngày đầu tiên 30 tháng 4 năm 2021 vượt 141 triệu NDT; ngày 1 tháng 5 phòng vé vượt 200 triệu NDT; ngày 2 tháng 5 phòng vé vượt 400 triệu NDT.</p>
+
+        <p>Hôn lễ của em thu về 424 triệu NDT (65.6 triệu đô la mỹ) trong 3 ngày đầu tuần công chiếu tại Trung Quốc.Vào ngày 3 tháng 5, doanh thu phòng vé đã vượt quá 500 triệu NDT; vào ngày 4 tháng 5, doanh thu phòng vé đã vượt quá 600 triệu NDT. Vào ngày 8 tháng 5, doanh thu phòng vé đã vượt quá 700 triệu NDT; doanh thu phòng vé cuối cùng là 823 triệu NDT. .</p></section>
+        
+    <section class="content">
+        <h2>Đánh giá chuyên môn</h2>
+<p>Trang web tổng hợp bài phê bình Maoyan, hơn 650,000 đã đánh giá bộ phim với điểm trung bình là <strong>8.0/10.</strong></p>
+
+<p>Lim Yian Lu của Yahoo Life, viết: "Là một bộ phim tình cảm lãng mạn, phim đã đưa khán giả đi tới từng cung bậc cảm xúc về câu chuyện tình của nhân vật trong phim. Mặc dù 115 phút có thể hơi dài, nhưng bộ phim đã khai thác sâu vào các tình tiết, mang lại chiều sâu không chỉ cho các nhân vật, mà còn phát triển mối quan hệ của họ</p>
+        <h2 class="section-title">Thông điệp ý nghĩa</h2>
+        <ul>
+            <li>Tình yêu không chỉ có sự ngọt ngào, mà còn cần sự hy sinh và trách nhiệm.</li>
+            <li>Có những người xuất hiện để giúp chúng ta trưởng thành hơn, dù kết thúc không phải là bên nhau mãi mãi.</li>
+            <li>Tuổi thanh xuân là khoảng thời gian đẹp nhất để yêu và học hỏi, nhưng cũng đầy những lựa chọn và hối tiếc.</li>
+        </ul>
+    </section>
+
+    <section class="gallery">
+        <h2 class="section-title">Khoảnh khắc đáng nhớ</h2>
+        <div class="image-gallery">
+            <img src="CẮT2.png" alt="Cảnh phim Hôn Lễ Của Em 1"> 
+            <img src="CẮT1.png" alt="Cảnh phim Hôn Lễ Của Em 2">
+            <img src="HÔ.jpg" alt="Cảnh phim Hôn Lễ Của Em 3">
+            <img src="HÊ6.jpg" alt="Cảnh phim Hôn Lễ Của Em 4">
+            <img src="Đ.jpg" alt="Cảnh phim Hôn Lễ Của Em 5">
+            <img src="hê1.jpg" alt="Cảnh phim Hôn Lễ Của Em 6">
+        </div>
+         <div class="video-container">
+       <iframe width="560" height="315" src="tiktok.mp4"  frameborder="0" ontrols preload="metadata">
+  <source src="phim.mp4" type="video/mp4" allowfullscreen></iframe>
+        </div>
+    </section>
+</div>
+</a>
+        <a href="https://nnphuong1511-max.github.io/cu-i/">⬅ Quay về trang chủ</a>
+
+<footer>
+    <p>&copy; 2026 Nội dung tổng hợp về phim "Hôn Lễ Của Em". </p>
+</footer>
+<a href="https://nnphuong1511-max.github.io/cu-i/" class="home-btn-float" title="Về trang chủ">🏠</a>
+</a>
+</body>
+</html>
